@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
+@font-face {
+    font-family: Munich;
+    src: url("Munich.ttf") format("opentype");
+  }
+  @font-face {
+    font-family: Manifesto;
+    src: url("MANIFESTO.ttf") format("opentype");
+  }
+  body{
+
+    padding: 0;
+    margin: 0;
+    background-image: url("/assets/fogmountain.jpg");
+    font-family: Manifesto;
+    font-size: 1.2rem;
+    color: grey;
+    border: black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    min-height: 100vh;
+  }
+  td{
+    border: 5px solid grey;height:100px;width:100px;
+}
+table{
+    border-collapse:collapse;
+    background-color: transparent;
+}
+.end{
+    display:none;
+}
+body{
+    background-image: url('/assets/fogmountain.jpg');
+    color: grey;
+}
+.btn{
+    text-decoration: none;
+    color: grey;
+    background-color: transparent;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.pair{
+    flex-direction: column;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+.form1{
+    background-color: transparent;
+    color: grey;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.form2{
+    background-color: transparent;
+    color: grey;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

@@ -1,0 +1,12 @@
+td{
+    border: 5px solid black;height:100px;width:100px;
+}
+table{
+    border-collapse:collapse;background-color:lightblue;
+}
+.end{
+    display:none;
+}
+body{
+    background-color:lightcoral;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="../assets/tictactoe.css">
+<script type="text/javascript">
+    function submitted() {
+        var submitName = document.getElementById("submitName").value;
+        localStorage.setItem("submitName", submitName);
+        return true;
+    }
+</script> 
+</head>
+<body align="center"><strong>
+    <p style="font-size:60px;font-family:'Courier New', Courier, monospace;">TIC-TAC-TOE</p>
+    <form style="margin-bottom:20px" action="game" method="post" onsubmit="submitted();" target="_self">
+        <input name="name" id="submitName" type="text" placeholder="Your Name Here" style="font-family:'Courier New', Courier, monospace;margin-top:20px;border:4px solid black;padding:10px;background-color:white;font-size:20px;background-color:lightblue">
+        <input id="subClick" type="submit" value="Submit" style="font-family:'Courier New', Courier, monospace;margin-top:20px;border:4px solid black;padding:10px;background-color:white;font-size:20px;background-color:lightblue" >
+    </form>
+    <table id="tbl" style="font-size:50px;font-family:'Courier New', Courier, monospace" align="center">
+        <tr>
+            <td class="cell" id="0" align="center"></td>
+            <td class="cell" id="1" align="center"></td>
+            <td class="cell" id="2" align="center"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3" align="center"></td>
+            <td class="cell" id="4" align="center"></td>
+            <td class="cell" id="5" align="center"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6" align="center"></td>
+            <td class="cell" id="7" align="center"></td>
+            <td class="cell" id="8" align="center"></td>
+        </tr>
+    </table>
+    <div style="padding:10px" class="end">
+        <div style="padding:10px;font-size:35px;font-family:'Courier New', Courier, monospace" class="text"></div>
+    </div>
+    <button style="font-family:'Courier New', Courier, monospace;margin-top:20px;border:4px solid black;padding:10px;background-color:white;font-size:20px;background-color:lightblue" onClick="newGame()"><strong>New Game</strong></button>
+</strong>
+</body>
+<script src="./assets/tictactoe.js"></script>
+</html>

@@ -35,7 +35,7 @@ header{
   margin-top: 2em;
   display: flex;
   align-items: center;
-  justify-content: center;;
+  justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,4 +100,10 @@ max-width:150px;
 .snake{
   margin-top: 3rem;
 max-width:170px;
+}
+.nix{
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width:170px;
 }

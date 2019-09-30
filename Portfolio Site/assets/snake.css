@@ -3,12 +3,13 @@
   font-family: Munich;
   src: url("Munich.ttf") format("opentype");
 }
+
 @font-face {
   font-family: Manifesto;
   src: url("MANIFESTO.ttf") format("opentype");
 }
-body{
 
+body {
   padding: 0;
   margin: 0;
   background-image: url("/assets/fogmountain.jpg");
@@ -20,27 +21,30 @@ body{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   min-height: 100vh;
 }
+
 .full-height-grow {
-    display: flex;
-    flex-direction: column;
-  }
-header{
+  display: flex;
+  flex-direction: column;
+}
+
+header {
   margin-top: .5em;
   display: flex;
   align-items: center;
   justify-content: center;
-    font-size: 60px;
-    margin-left: .5rem;
-    margin-right: 1rem;
+  font-size: 60px;
+  margin-left: .5rem;
+  margin-right: 1rem;
 }
 
-.allButtons{
+.allButtons {
   margin-top: .8em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bottomLinks{
+
+.bottomLinks {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +52,7 @@ header{
   margin-bottom: .7em;
 }
 
-.btn{
+.btn {
   color: grey;
   background-image: "/assests/fogmountain.jpg";
   padding: .75rem 1.5rem;
@@ -58,7 +62,8 @@ header{
   border: 10px;
   border-color: grey;
 }
-.btn2{
+
+.btn2 {
   color: grey;
   background-image: "/assests/fogmountain.jpg";
   padding: .75rem 1.5rem;
@@ -68,58 +73,61 @@ header{
   border: 10px;
   border-color: grey;
 }
-.link1{
+
+.link1 {
   margin-top: 3rem;
-max-width:140px;
+  max-width: 140px;
 }
-.about{
+
+.about {
   margin-top: 3rem;
-max-width:130px;
+  max-width: 130px;
 }
-.project1{
+
+.project1 {
   margin-top: 3rem;
-max-width:140px;
+  max-width: 140px;
 }
-.link2{
+
+.link2 {
   margin-top: 3rem;
-max-width:150px;
+  max-width: 150px;
 }
-.link3{
+
+.link3 {
   margin-top: 3rem;
-max-width:150px;
+  max-width: 150px;
 }
-.para{
+
+.para {
   margin-top: .8em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.platWords{
+
+.platWords {
   line-height: 1em;
 }
 
-.plat{
+.plat {
   margin-top: .05em;
   display: flex;
   align-items: center;
   justify-content: center;
   color: grey;
   font-family: Manifesto;
-  line-height:10px;
-  
+  line-height: 10px;
 }
 
 #home {
-  
   width: 350px;
   height: 350px;
   background-size: auto 350px;
   background-repeat: no-repeat;
-  background-color: grey;
+  background-color: lightseagreen;
   background-position: center center;
   padding: 0;
-
-
 }
 
 .btn3 {
@@ -132,8 +140,8 @@ max-width:150px;
   font-size: 1rem;
   border: 10px;
   border-color: grey;
+  margin-left: 5px;
 }
-
 
 .game {
   display: flex;
@@ -141,13 +149,28 @@ max-width:150px;
   flex-direction: column;
   margin: 0 auto;
 }
-.form1{
+
+.form1 {
   background-color: transparent;
   color: grey;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.form2{
+
+.form2 {
   background-color: transparent;
   color: grey;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.newbtn {
+  text-decoration: none;
+  color: grey;
+  background-color: transparent;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-left: 5px;
+}
+
+.underbtns {
+  display: flex;
+  flex-direction: row;
 }

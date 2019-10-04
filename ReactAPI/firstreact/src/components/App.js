@@ -26,12 +26,13 @@ class App extends Component {
             return 'Loading'
         } else {
             return (
-                <div className="card" style={{width:"18rem",border:" 1px solid rgba(0, 0, 0, 0.125)"}} align="center">
+                <div className="card" style={{width:"18rem",border:" 1px solid black"}} align="center">
                     <div className="card-body">
                         {items.map(item => (
                             <React.Fragment>
                                 <h5 key={item.id} className="card-title">{item.title}</h5>
                                 <p key={item.id} className="card-text">{item.description}</p>
+                                <hr></hr>
                             </React.Fragment>
                         ))}
                     </div>

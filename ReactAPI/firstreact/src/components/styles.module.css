@@ -1,4 +1,6 @@
-
+.top{
+    background: blue;
+}
 .card {
     position: relative;
     display: -webkit-box;

@@ -23,14 +23,14 @@ class App extends Component {
     render() {
         var { isLoaded, items } = this.state;
         if (!isLoaded) {
-            return 'Loading'
+            return 'Все счастли́вые се́мьи похо́жи друг на дру́га, ка́ждая несчастли́вая семья́ несчастли́ва по-сво́ему.'
         } else {
             return (
                 <div className="card" style={{width:"18rem",border:" 1px solid black"}} align="center">
                     <div className="card-body">
                         {items.map(item => (
                             <React.Fragment>
-                                <h5 key={item.id} className="card-title">{item.title}</h5>
+                                <h4 key={item.id} className="card-title">{item.title}</h4>
                                 <p key={item.id} className="card-text">{item.description}</p>
                                 <hr></hr>
                             </React.Fragment>

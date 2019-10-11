@@ -5,9 +5,9 @@ Tasks
 
 -In the scripts.js file, using DOM manipulation, create a div with a class named "header-container".
 
--Create a h1 element, then create a text node with the text "This is an h1".  Append the text to the h1 then append the h1 to the div, then append the div to the body. Does it show up? If you put the script tag in the head of your html, then no, it did not show up. Thats what I wanted. Lets hop to google and search hint: "DOM content Loaded"
+-Create a h1 element, then create a text node with the text "This is an h1". Append the text to the h1 then append the h1 to the div, then append the div to the body. Does it show up? If you put the script tag in the head of your html, then no, it did not show up. Thats what I wanted. Lets hop to google and search hint: "DOM content Loaded"
 
--With the h1 now appearing on the page, lets practice creating multiple elements and having them appear. 
+-With the h1 now appearing on the page, lets practice creating multiple elements and having them appear.
 
 -Create a h2 element, give it the text "This is an h2" and append it to the same div the h1 one is.
 

@@ -1,12 +1,15 @@
-td{
-    border: 5px solid black;height:100px;width:100px;
+td {
+  border: 5px solid black;
+  height: 100px;
+  width: 100px;
 }
-table{
-    border-collapse:collapse;background-color:lightblue;
+table {
+  border-collapse: collapse;
+  background-color: lightblue;
 }
-.end{
-    display:none;
+.end {
+  display: none;
 }
-body{
-    background-color:lightcoral;
+body {
+  background-color: lightcoral;
 }

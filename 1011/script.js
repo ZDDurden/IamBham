@@ -81,8 +81,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   function clicking() {
     for (let i = 0; i < listArr.length; i++) {
-      listArr[i].addEventListener("click", () => {
-        listArr[i].style.color = getColor();
+      li.addEventListener("click", () => {
+        li.style.color = getColor();
       });
     }
   }

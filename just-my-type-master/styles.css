@@ -1,27 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 * {
   margin: 0;
-  padding: 0;	
+  padding: 0;
 }
+
 #prompt-container {
   font-family: Courier New, Courier, monospace;
-  font-size: 24px;
-  letter-spacing: 3px;
+  font-size: 25px;
+  letter-spacing: 5px;
 }
 
 #yellow-block {
   position: absolute;
-  margin-top: 10px;
-  width: 15px;
-  height: 15px;
-  background-color: yellow;
+  margin-top: 7px;
+  margin-left: 56px;
+  width: 19px;
+  height: 19px;
+  background-color: palegoldenrod;
+  border-radius: 0.25rem;
+}
+
+#sentence {
+  margin-left: 51px;
 }
 
 .keyboard-container {
-  margin-top: 200px;
+  margin-top: 1 00px;
 }
 
 #target-letter {
-  font-size: 38px;  
+  font-size: 38px;
 }
 
 .keys-row {
@@ -33,9 +42,21 @@
   font-size: 20px;
 }
 .glyphicon-ok {
-  color: #1DA237
+  color: #1da83f;
 }
 
 .glyphicon-remove {
-  color : #CD2626
+  color: #de3241;
+}
+
+.highlight {
+  background-color: palegoldenrod;
+}
+
+#yesBtn {
+  margin: 0 auto;
+}
+
+#noBtn {
+  margin: 0 auto;
 }

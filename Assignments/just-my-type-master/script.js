@@ -1,14 +1,14 @@
 const sentences = [
   "Five hours? Aw, man! Couldn't you just get me the death penalty?",
   "THE BIG BRAIN AM WINNING AGAIN! I AM THE GREETEST! NOW I AM LEAVING EARTH, FOR NO RAISEN!",
-  "With a warning label this big, you know they gotta be fun! ",
+  "With a warning label this big, you know they gotta be fun!",
   "Fry! Stay back! He's too powerful!",
   "Yes! In your face, Gandhi!"
 ];
 let sentenceIndex = 0;
 let letterIndex = 0;
 let keyCount = 0;
-let wordCount = 54;
+let wordCount = 53;
 let mistakeCount = 0;
 let keyTimer = 0;
 let timeStart = 0;

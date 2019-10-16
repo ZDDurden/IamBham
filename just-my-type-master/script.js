@@ -88,7 +88,7 @@ $(document).on("keypress", event => {
         "#yellow-block, #keyboard-upper-container, #keyboard-lower-container, #space-key-container"
       ).hide();
       let scores = `
-                  <strong>WPM:</strong> <span style="background-color: rgba(255, 201, 4, 0.500); border-radius: 0.25rem;">${grossWordsPerMinute.toFixed(
+                  <strong>WPM:</strong> <span">${grossWordsPerMinute.toFixed(
                     2
                   )}</span><br>
                   `;

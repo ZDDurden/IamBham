@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../assets/tictactoe.css" />
+    <script type="text/javascript">
+      function submitted() {
+        var submitName = document.getElementById("submitName").value;
+        localStorage.setItem("submitName", submitName);
+        return true;
+      }
+    </script>
+  </head>
+
+  <body align="center">
+    <strong>
+      <p style="font-size:60px;font-family:Manifesto;;">TIC-TAC-TOE</p>
+      <form
+        style="margin-bottom:20px"
+        action="game"
+        method="post"
+        onsubmit="submitted();"
+        target="_self"
+      >
+        <input
+          class="form1"
+          name="name"
+          id="submitName"
+          type="text"
+          placeholder="Your Name Here"
+          style="font-family:Manifesto;;margin-top:20px;border:4px solid grey;padding:10px;font-size:20px"
+        />
+        <input
+          class="form2"
+          id="subClick"
+          type="submit"
+          value="Submit"
+          style="font-family:Manifesto;;margin-top:20px;border:4px solid grey;padding:10px;font-size:20px;"
+        />
+      </form>
+      <table
+        id="tbl"
+        style="font-size:50px;font-family:Manifesto;"
+        align="center"
+      >
+        <tr>
+          <td class="cell" id="0" align="center"></td>
+          <td class="cell" id="1" align="center"></td>
+          <td class="cell" id="2" align="center"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="3" align="center"></td>
+          <td class="cell" id="4" align="center"></td>
+          <td class="cell" id="5" align="center"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="6" align="center"></td>
+          <td class="cell" id="7" align="center"></td>
+          <td class="cell" id="8" align="center"></td>
+        </tr>
+      </table>
+
+      <div style="padding:10px" class="end">
+        <div
+          style="padding:10px;font-size:35px;font-family:Manifesto;"
+          class="text"
+        ></div>
+      </div>
+      <div class="pair">
+        <button
+          class="btn"
+          style="font-family:Manifesto;margin-top:20px;border:4px solid grey;padding:10px;font-size:20px"
+          onClick="newGame()"
+        >
+          <strong>New Game</strong>
+        </button>
+        <a
+          href="/"
+          class="btn"
+          style="font-family:Manifesto;margin-top:20px;border:4px solid grey;padding:10px;font-size:20px"
+          >Home</a
+        >
+      </div>
+    </strong>
+  </body>
+  <script src="./assets/tictactoe.js"></script>
+</html>

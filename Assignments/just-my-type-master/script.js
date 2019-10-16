@@ -1,9 +1,9 @@
 const sentences = [
-  "ten ate neite ate nee enet ite ate inet ent eate",
-  "Too ato too nOt enot one totA not anot tOO aNot",
-  "oat itain oat tain nate eate tea anne inant nean",
-  "itant eate anot eat nato inate eat anot tain eat",
-  "nee ene ate ite tent tiet ent ine ene ete ene ate"
+  "Five hours? Aw, man! Couldn't you just get me the death penalty?",
+  "THE BIG BRAIN AM WINNING AGAIN! I AM THE GREETEST! NOW I AM LEAVING EARTH, FOR NO RAISEN!",
+  "With a warning label this big, you know they gotta be fun! ",
+  "Fry! Stay back! He's too powerful!",
+  "Yes! In your face, Gandhi!"
 ];
 let sentenceIndex = 0;
 let letterIndex = 0;
@@ -82,13 +82,13 @@ $(document).on("keypress", event => {
       //sets up the post game screen
       let difference = timeEnd - timeStart;
       let minutes = difference / 1000 / 60;
-      let grossWordsPerMinute = keyCount / 5 / minutes;
+      let wordsPerMinute = keyCount / 5 / minutes;
       $("#sentence, #target-letter, #feedback").empty();
       $(
         "#yellow-block, #keyboard-upper-container, #keyboard-lower-container, #space-key-container"
       ).hide();
       let scores = `
-                  <strong>WPM:</strong> <span">${grossWordsPerMinute.toFixed(
+                  <strong>WPM:</strong> <span>${wordsPerMinute.toFixed(
                     2
                   )}</span><br>
                   `;

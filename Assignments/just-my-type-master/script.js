@@ -51,7 +51,7 @@ $(document).on("keypress", event => {
   $("#target-letter").text(nextLetter);
   //move the yellow block
   $("#yellow-block").animate(
-    { left: "+=17px" },
+    { left: "+=20px" },
     { duration: 100, easing: "linear" }
   );
   if (sentenceIndex < sentences.length) {
@@ -82,7 +82,7 @@ $(document).on("keypress", event => {
       //sets up the post game screen
       let difference = timeEnd - timeStart;
       let minutes = difference / 1000 / 60;
-      let wordsPerMinute = keyCount / 5 / minutes;
+      let wordsPerMinute = keyCount / minutes - 2 * mistakeCount;
       $("#sentence, #target-letter, #feedback").empty();
       $(
         "#yellow-block, #keyboard-upper-container, #keyboard-lower-container, #space-key-container"

@@ -27,7 +27,11 @@ $(document)
     }
   })
   .on("keyup", event => {
-    if (event.which === 16 || event.which === 20) {
+    if (
+      (event.which === 16 || event.which === 20) &&
+      sentenceIndex < sentences.length - 1
+    ) {
+      console.log(sentenceIndex < sentences.length - 1);
       $("#keyboard-lower-container, #keyboard-upper-container").toggle();
     }
     $(".highlight").removeClass("highlight");

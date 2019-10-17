@@ -1,14 +1,14 @@
 const sentences = [
-  "Five hours? Aw, man! Couldn't you just get me the death penalty?",
-  "THE BIG BRAIN AM WINNING AGAIN! I AM THE GREETEST! NOW I AM LEAVING EARTH, FOR NO RAISEN!",
-  "With a warning label this big, you know they gotta be fun!",
+  "Stop talking, brain thinking.",
+  "You've swallowed a planet!",
+  "They're not aliens, they're Earth...liens!",
   "Fry! Stay back! He's too powerful!",
   "Yes! In your face, Gandhi!"
 ];
 let sentenceIndex = 0;
 let letterIndex = 0;
 let keyCount = 0;
-let wordCount = 53;
+let wordCount = 24;
 let mistakeCount = 0;
 let keyTimer = 0;
 let timeStart = 0;
@@ -46,20 +46,28 @@ $(document).on("keypress", event => {
   //access the indexes in the sentences array
   let currentSentence = sentences[sentenceIndex];
   let currentLetter = currentSentence[letterIndex];
-  letterIndex++;
-  let nextLetter = currentSentence[letterIndex];
-  $("#target-letter").text(nextLetter);
-  //move the yellow block
-  $("#yellow-block").animate(
-    { left: "+=20px" },
-    { duration: 100, easing: "linear" }
-  );
+  if (keyCode === currentLetter.charCodeAt()) {
+    letterIndex++;
+    let nextLetter = currentSentence[letterIndex];
+    $("#target-letter").text(nextLetter);
+    //move the yellow block
+    $("#yellow-block").animate(
+      { left: "+=20px" },
+      { duration: 100, easing: "linear" }
+    );
+  }
+  if (keyCode !== currentLetter.charCodeAt()) {
+    $("#target-letter").text(currentLetter);
+    $("#yellow-block").stop();
+  }
   if (sentenceIndex < sentences.length) {
     if (letterIndex < currentSentence.length) {
       //adds the check and x characters
       if (keyCode === currentLetter.charCodeAt()) {
+        $("#feedback").empty();
         $("#feedback").append('<span class="glyphicon glyphicon-ok"></span>');
       } else if (keyCode !== currentLetter.charCodeAt()) {
+        $("#feedback").empty();
         $("#feedback").append(
           '<span class="glyphicon glyphicon-remove"></span>'
         );
@@ -82,15 +90,14 @@ $(document).on("keypress", event => {
       //sets up the post game screen
       let difference = timeEnd - timeStart;
       let minutes = difference / 1000 / 60;
-      let wordsPerMinute = keyCount / minutes - 2 * mistakeCount;
+      let wordsPerMinute = keyCount / 5 / minutes;
       $("#sentence, #target-letter, #feedback").empty();
-      $(
-        "#yellow-block, #keyboard-upper-container, #keyboard-lower-container, #space-key-container"
-      ).hide();
+      $("#yellow-block").hide();
+      $("#space-key-container").hide();
+      $("#keyboard-upper-container").hide();
+      $("#keyboard-lower-container").hide();
       let scores = `
-                  <strong>WPM:</strong> <span>${wordsPerMinute.toFixed(
-                    2
-                  )}</span><br>
+                  <strong>WPM:</strong> <span>${wordsPerMinute.toFixed()}</span><br>
                   `;
       $("#sentence")
         .addClass("text-center mt-4")
@@ -108,7 +115,7 @@ $(document).on("keypress", event => {
       $("#noBtn").on("click", () => {
         $("#noBtn")
           .delay(500)
-          .fadeOut(500);
+          .hide();
       });
     }
   }

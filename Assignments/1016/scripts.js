@@ -27,4 +27,53 @@ class Vehicle {
     this.manufacturer = manufacturer;
     this.wheels = wheels;
   }
+  aboutVehicle() {
+    console.log(
+      `This is a ${this.className}, made by ${this.manufacturer} and it has ${this.wheels} wheels`
+    );
+  }
 }
+class Truck extends Vehicle {
+  constructor(manufacturer, wheels, doors, bed) {
+    super(manufacturer, wheels);
+    this.doors = doors;
+    this.bed = bed;
+  }
+  aboutTruck() {
+    console.log(
+      `This is a truck, made by ${this.manufacturer}, it has ${this.wheels} wheels, ${this.doors} and a truck bed.`
+    );
+  }
+}
+class Sedan extends Vehicle {
+  constructor(manufacturer, wheels, size, mpg) {
+    super(manufacturer, wheels);
+    this.size = size;
+    this.mpg = mpg;
+  }
+  aboutSedan() {
+    console.log(
+      `This is a sedan, made by ${this.manufacturer}, it has ${this.wheels} wheels, it is ${this.size} sized, and gets ${this.mpg} mpg.`
+    );
+  }
+}
+class Motorcycle extends Vehicle {
+  constructor(manufacturer, wheels, handlebars, noDoors) {
+    super(manufacturer, wheels);
+    this.handlebars = handlebars;
+    this.noDoors = noDoors;
+  }
+  aboutMotorcycle() {
+    console.log(
+      `This is a motorcycle, made by ${this.manufacturer}, it has ${this.wheels} wheels, has handlebars and no doors.`
+    );
+  }
+}
+
+const trk = new Truck("Ford", 4, 2, true);
+const car = new Sedan("Honda", 4, "medium", 25);
+const cyc = new Motorcycle("Harley", 2, true, true);
+
+trk.aboutTruck();
+car.aboutSedan();
+cyc.aboutMotorcycle();

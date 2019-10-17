@@ -40,7 +40,7 @@ $(document).on("keypress", event => {
   //console.log(keyCode);
   if (keyTimer < 1) {
     //starts the timer
-    timeStart = event.timeStamp;
+    timeStart = Date.now();
     keyTimer++;
   }
   //access the indexes in the sentences array
@@ -86,18 +86,19 @@ $(document).on("keypress", event => {
       );
     } else if (sentenceIndex < sentences.length) {
       //concludes the game
-      timeEnd = event.timeStamp;
+      timeEnd = Date.now();
       //sets up the post game screen
       let difference = timeEnd - timeStart;
       let minutes = difference / 1000 / 60;
       let wordsPerMinute = keyCount / 5 / minutes;
+      //console.log(difference);
       $("#sentence, #target-letter, #feedback").empty();
       $("#yellow-block").hide();
       $("#space-key-container").hide();
-      console.log('hide')
+      //console.log("hide");
       $("#keyboard-upper-container").hide();
       $("#keyboard-lower-container").hide();
-      console.log('hide2')
+      //console.log("hide2");
       let scores = `
                   <strong>WPM:</strong> <span>${wordsPerMinute.toFixed()}</span><br>
                   `;
@@ -115,6 +116,8 @@ $(document).on("keypress", event => {
         location.reload();
       });
       $("#noBtn").on("click", () => {
+        $("#keyboard-upper-container").hide();
+        $("#keyboard-lower-container").hide();
         $("#noBtn")
           .delay(500)
           .hide();

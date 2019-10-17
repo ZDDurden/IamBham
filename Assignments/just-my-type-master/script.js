@@ -37,7 +37,7 @@ $(document).on("keypress", event => {
   //highlights the currently pressed key
   let keyCode = event.which;
   $(`#${keyCode}`).addClass("highlight");
-  console.log(keyCode);
+  //console.log(keyCode);
   if (keyTimer < 1) {
     //starts the timer
     timeStart = event.timeStamp;
@@ -94,8 +94,10 @@ $(document).on("keypress", event => {
       $("#sentence, #target-letter, #feedback").empty();
       $("#yellow-block").hide();
       $("#space-key-container").hide();
+      console.log('hide')
       $("#keyboard-upper-container").hide();
       $("#keyboard-lower-container").hide();
+      console.log('hide2')
       let scores = `
                   <strong>WPM:</strong> <span>${wordsPerMinute.toFixed()}</span><br>
                   `;

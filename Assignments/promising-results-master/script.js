@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       return slowMath.add(remainder, 32);
     })
     .then(sum => {
-      console.log(`The final result is${sum}!`);
+      console.log(`The final result is ${sum}!`);
     })
     .catch(err => {
       console.log("There has been an issue!");
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //     await console.log(remainder);
 //     await slowMath.add(remainder, 32);
 //     await console.log(sum);
-//     await console.log(`The final result is ${sum}`);
+//     await console.log(`The final result is ${sum}!`);
 //   } catch (err) {
 //     console.log(err);
 //   }

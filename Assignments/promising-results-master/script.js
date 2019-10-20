@@ -1,43 +1,42 @@
 document.addEventListener("DOMContentLoaded", function() {
   slowMath
     .add(6, 2)
-    .then(sum => {
-      console.log(sum);
-      return slowMath.multiply(sum, 2);
+    .then(num => {
+      console.log(num);
+      return slowMath.multiply(num, 2);
     })
-    .then(product => {
-      console.log(product);
-      return slowMath.divide(product, 4);
+    .then(num => {
+      console.log(num);
+      return slowMath.divide(num, 4);
     })
-    .then(quotient => {
-      console.log(quotient);
-      return slowMath.subtract(quotient, 3);
+    .then(num => {
+      console.log(num);
+      return slowMath.subtract(num, 3);
     })
-    .then(difference => {
-      console.log(difference);
-      return slowMath.add(difference, 98);
+    .then(num => {
+      console.log(num);
+      return slowMath.add(num, 98);
     })
-    .then(sum => {
-      console.log(sum);
-      return slowMath.remainder(sum, 2);
+    .then(num => {
+      console.log(num);
+      return slowMath.remainder(num, 2);
     })
-    .then(remainder => {
-      console.log(remainder);
-      return slowMath.multiply(remainder, 50);
+    .then(num => {
+      console.log(num);
+      return slowMath.multiply(num, 50);
     })
-    .then(product => {
-      console.log(product);
-      return slowMath.remainder(product, 40);
+    .then(num => {
+      console.log(num);
+      return slowMath.remainder(num, 40);
     })
-    .then(remainder => {
-      console.log(remainder);
-      return slowMath.add(remainder, 32);
+    .then(num => {
+      console.log(num);
+      return slowMath.add(num, 32);
     })
-    .then(sum => {
-      console.log(`The final result is ${sum}!`);
+    .then(num => {
+      console.log(`The final result is ${num}.`);
     })
     .catch(err => {
-      console.log("There has been an issue!");
       console.log(err);
     });
 });

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ScrollView, StatusBar } from "react-native";
+import "react-bootstrap";
+import "./champions.json";
 
 export default class App extends Component {
   constructor(props) {
@@ -10,7 +12,7 @@ export default class App extends Component {
     };
   }
   componentDidMount() {
-    fetch("https://ghibliapi.herokuapp.com/films")
+    fetch("./champions.json")
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -30,28 +32,42 @@ export default class App extends Component {
       );
     } else {
       return (
-        <View style={styles.container}>
-          <React.Fragment>
-            {items.map(item => (
-              <React.Fragment>
-                <Text h4 key={item.id} style={styles.cardtitle}>
-                  {item.title}
-                </Text>
-                <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
-                  <Text p key={item.id} style={styles.cardtext}>
-                    {item.description}
-                  </Text>
-                  <View
-                    style={{
-                      borderBottomColor: "black",
-                      borderBottomWidth: 1
-                    }}
-                  />
-                </View>
-              </React.Fragment>
-            ))}
-          </React.Fragment>
-        </View>
+        // <StatusBar hidden={true}>
+        <ScrollView>
+          <View style={styles.container}>
+            <React.Fragment>
+              {items.map(item => (
+                <React.Fragment>
+                  <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
+                    <Text
+                      h4
+                      key={item.id}
+                      style={{
+                        flexDirection: "row",
+                        flexWrap: "wrap",
+                        color: "#e6dada"
+                      }}
+                    >
+                      {this.item.name}
+                    </Text>
+                  </View>
+                  <View style={{ flexDirection: "row", flexWrap: "wrap" }}>
+                    <Text p key={item.id} style={styles.cardtext}>
+                      {this.item.blurb}
+                    </Text>
+                    <View
+                      style={{
+                        borderBottomColor: "black",
+                        borderBottomWidth: 1
+                      }}
+                    />
+                  </View>
+                </React.Fragment>
+              ))}
+            </React.Fragment>
+          </View>
+        </ScrollView>
+        // </StatusBar>
       );
     }
   }
@@ -62,11 +78,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#6e93f0",
     alignItems: "center",
-    justifyContent: "center",
-    color: "#f08989",
-    flexWrap: "wrap",
-    flexShrink: 1,
-    flexDirection: "column"
+    padding: "10%",
+    color: "#f08989"
   },
 
   cardtitle: {
@@ -74,14 +87,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#6e93f0",
     alignItems: "center",
     justifyContent: "center",
-    color: "#e6dada"
+    color: "#e6dada",
+    flexDirection: "row",
+    flexWrap: "wrap"
   },
 
   cardtext: {
     flex: 1,
     backgroundColor: "#6e93f0",
     alignItems: "center",
-    justifyContent: "center",
     color: "#f08989",
     textAlign: "center"
   }

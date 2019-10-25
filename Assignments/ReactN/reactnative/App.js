@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, ScrollView, StatusBar } from "react-native";
 import "react-bootstrap";
 import "./champions.json";
 import "./assets/champs.json";
-const champs = "./assets/champs.json";
 
 export default class App extends Component {
   constructor(props) {
@@ -14,27 +13,22 @@ export default class App extends Component {
     };
   }
   componentDidMount() {
-    fetch('https://ghibliapi.herokuapp.com/films')
-    // fetch(".assets/champs.json")
-      // fetch(
-      //   "https://74f992c9-3fa4-4d14-bc7f-6d7572075e9f.mock.pstmn.io/champions"
-      // )
+    // fetch('https://ghibliapi.herokuapp.com/films')
+    // fetch("https://ca61547f-0ae8-4fe2-9282-081e71130e63.mock.pstmn.io/champs")
+    fetch(
+      "https://74f992c9-3fa4-4d14-bc7f-6d7572075e9f.mock.pstmn.io/champions"
+    )
       .then(response => response.json())
       .then(data => {
         this.setState({
           isLoaded: true,
           items: data
-        })
+        });
+        let result = Object.entries(this.state.items);
+        console.log(result);
       });
   }
   render() {
-    // var arr = [];
-    // console.log(Object.keys(champs));
-    // Object.keys(champs).forEach(function(key) {
-    //   arr.push(champs[key]);
-    // });
-    for(let item in items){
-      console.log(item);
     var { isLoaded, items } = this.state;
     if (!isLoaded) {
       return (
@@ -90,7 +84,6 @@ export default class App extends Component {
     }
   }
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

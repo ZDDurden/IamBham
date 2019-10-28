@@ -1,4 +1,5 @@
 import React from "react";
+import Spinner from "react-bootstrap/Spinner";
 
 // function App(props) {
 //   return <h1>{props.hello}</h1>;
@@ -39,6 +40,7 @@ class App extends React.Component {
       return (
         <React.Fragment>
           <h1>Loading...</h1>
+          <Spinner animation="border" />
           <button onClick={this.handleSubmit}>Submit</button>
         </React.Fragment>
       );

@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
@@ -11,21 +12,32 @@ import "../index.css";
 const TodoList = ({ todos, deleteTodo }) => (
   <List>
     {todos.map((todo, index) => (
-      <div className='lsti'>
-      <ListItem className="lsti" key={index.toString()} dense button>
-        <Checkbox tabIndex={-1} disableRipple />
-        <ListItemText primary={todo} />
-        <ListItemSecondaryAction>
-          <IconButton className='btn'
-            aria-label="Delete"
-            onClick={() => {
-              deleteTodo(index);
-            }}
-          >
-            <DeleteIcon />
-          </IconButton>
-        </ListItemSecondaryAction>
-      </ListItem>
+      <div className="lsti">
+        <ListItem className="lsti" key={index.toString()} dense button>
+          <Checkbox tabIndex={-1} disableRipple />
+          <ListItemText
+            disableTypography
+            primary={
+              <Typography
+                type="body2"
+                style={{ fontFamily: "'Spicy Rice', cursive" }}
+              >
+                {todo}
+              </Typography>
+            }
+          />
+          <ListItemSecondaryAction>
+            <IconButton
+              className="btn"
+              aria-label="Delete"
+              onClick={() => {
+                deleteTodo(index);
+              }}
+            >
+              <DeleteIcon />
+            </IconButton>
+          </ListItemSecondaryAction>
+        </ListItem>
       </div>
     ))}
   </List>

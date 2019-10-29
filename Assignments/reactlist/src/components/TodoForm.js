@@ -1,5 +1,5 @@
 import React from "react";
-import TextField from "@material-ui/core/TextField";
+// import TextField from "@material-ui/core/TextField";
 import useInputState from "./useInputState";
 import "../index.css";
 
@@ -15,7 +15,8 @@ const TodoForm = ({ saveTodo }) => {
         reset();
       }}
     >
-      <TextField className='box'
+      <input
+        className="box"
         variant="outlined"
         placeholder="Add todo"
         margin="normal"

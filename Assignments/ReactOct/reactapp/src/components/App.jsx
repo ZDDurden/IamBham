@@ -8,7 +8,7 @@ import Spinner from "react-bootstrap/Spinner";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { text: "Text", placeholder: "input", hasLoaded: false };
+    this.state = { text: "", placeholder: "input", hasLoaded: false };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -33,7 +33,6 @@ class App extends React.Component {
               onChange={this.handleChange}
             ></input>
           </form>
-          <button onClick={this.handleSubmit}>Submit</button>
         </React.Fragment>
       );
     } else {
@@ -41,7 +40,7 @@ class App extends React.Component {
         <React.Fragment>
           <h1>Loading...</h1>
           <Spinner animation="border" />
-          <button onClick={this.handleSubmit}>Submit</button>
+          <button onClick={this.handleSubmit}>Load</button>
         </React.Fragment>
       );
     }

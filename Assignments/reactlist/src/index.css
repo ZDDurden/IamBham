@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+@font-face {
+  font-family: "Sacramento", cursive;
+  src: url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+}
+html {
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  background-color: #dbd8f0;
+}
+h1{
+  font-family: "Sacramento-Regular";
+  color: #eac5d8;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  background-color: #dbd8f0;
+ font-size: 30px;
+}
+.textTitle {
+  color: #eac5d8;
+}
+.lst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+}
+.lsti {
+  display: flex;
+  justify-content: space-between;
+  background-color: #56cbf9;
+  color: #eac5d8;
+  border: 5px;
+  border-color: black;
+  margin-bottom: 5px;
+}
+.box {
+  background-color: #eac5d8;
+  border: 5px;
+  border-color: #7fbeeb;
+}
+.btn{
+  display: flex;
+  align-content: flex-end;
+}

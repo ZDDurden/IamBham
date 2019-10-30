@@ -7,7 +7,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Checkbox from "@material-ui/core/Checkbox";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
-import InlineEdit from "react-edit-inline";
 import "../index.css";
 
 const TodoList = ({ todos, deleteTodo }) => (
@@ -31,7 +30,19 @@ const TodoList = ({ todos, deleteTodo }) => (
               </Typography>
             }
           />
-          <ListItemSecondaryAction>
+          {/* <ListItemSecondaryAction>
+            <IconButton
+              className="btn"
+              aria-label="Edit"
+              style={{ color: "#153b50" }}
+              onClick={() => {
+                editTodo({todo});
+              }}
+            >
+              <AddShoppingCartIcon />
+            </IconButton>
+            </ListItemSecondaryAction> */}
+            <ListItemSecondaryAction>
             <IconButton
               className="btn"
               aria-label="Delete"

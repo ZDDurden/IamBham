@@ -8,6 +8,9 @@ export default initialValue => {
     addTodo: todoText => {
       setTodos([...todos, todoText]);
     },
+    editTodo: todoText => {
+      setTodos(...todos, todoText.value)
+    },
     deleteTodo: todoIndex => {
       const newTodos = todos.filter((_, index) => index !== todoIndex);
 

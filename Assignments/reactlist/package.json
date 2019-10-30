@@ -9,6 +9,7 @@
     "@material-ui/icons": "3.0.1",
     "react": "16.7.0-alpha.0 - next",
     "react-dom": "16.7.0-alpha.0 - next",
+    "react-edit-inline": "^1.0.8",
     "react-scripts": "2.0.3",
     "typeface-sacramento": "0.0.72",
     "webfontloader": "^1.6.28"

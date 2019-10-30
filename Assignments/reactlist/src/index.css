@@ -55,3 +55,15 @@ h1 {
   display: flex;
   align-content: flex-end;
 }
+.box2 {
+  height: 52px;
+  width: 100px;
+  margin-left: 5px;
+  color: #429ea6;
+}
+::placeholder {
+  color: #429ea6;
+}
+.listText {
+  color: #16f4d0;
+}

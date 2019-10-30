@@ -23,6 +23,7 @@ const TodoForm = ({ saveTodo }) => {
         onChange={onChange}
         value={value}
       />
+      <button className="box box2">Add</button>
     </form>
   );
 };

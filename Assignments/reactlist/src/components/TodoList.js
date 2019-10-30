@@ -14,13 +14,17 @@ const TodoList = ({ todos, deleteTodo }) => (
     {todos.map((todo, index) => (
       <div className="lsti">
         <ListItem className="lsti" key={index.toString()} dense button>
-          <Checkbox tabIndex={-1} disableRipple />
+          <Checkbox style={{ color: "#153b50" }} tabIndex={-1} disableRipple />
           <ListItemText
             disableTypography
             primary={
               <Typography
+                className="listText"
                 type="body2"
-                style={{ fontFamily: "'Spicy Rice', cursive" }}
+                style={{
+                  fontFamily: "'Spicy Rice', cursive",
+                  color: "#153b50"
+                }}
               >
                 {todo}
               </Typography>
@@ -30,6 +34,7 @@ const TodoList = ({ todos, deleteTodo }) => (
             <IconButton
               className="btn"
               aria-label="Delete"
+              style={{ color: "#153b50" }}
               onClick={() => {
                 deleteTodo(index);
               }}

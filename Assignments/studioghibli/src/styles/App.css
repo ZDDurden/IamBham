@@ -1,0 +1,37 @@
+.category-list > div {
+	margin-bottom: 1em;
+	background-color: cornflowerblue;
+}
+html{
+	display: flex;
+	justify-content: center;
+	background-color: cornflowerblue
+}
+label {
+	margin: 0;
+	font-weight: bold;
+	display: inline;
+	background-color: cornflowerblue;
+}
+.links{
+	display: flex;
+	justify-content: center;
+}
+.nav .nav-item .active {
+	display: flex;
+	align-items: center;
+	color: black;
+	background-color: cornflowerblue;
+}
+#title{
+	background-color: cornflowerblue;
+	display: flex;
+	align-items: center;
+	color: red;
+	font-size: 40px
+}
+.subs{
+	float: bottom;
+	display: flex;
+	justify-content: center;
+}

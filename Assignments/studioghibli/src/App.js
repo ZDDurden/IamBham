@@ -12,7 +12,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<BrowserRouter>
-				<Container fluid>
+				<Container fluid className="cont">
 					<Navigation />
 					<Container>
 						<Main />

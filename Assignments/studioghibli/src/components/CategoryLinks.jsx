@@ -7,18 +7,6 @@ const displayFields = {
 		{ label: 'films', heading: 'Appears in' },
 		{ label: 'species', heading: 'Species' }
 	],
-	locations: [
-		{ label: 'people', heading: 'Residents' },
-		{ label: 'films', heading: 'Appears In' }
-	],
-	species: [
-		{ label: 'people', heading: 'Members' },
-		{ label: 'films', heading: 'Appears in' }
-	],
-	vehicles: [
-		{ label: 'people', heading: 'Pilots' },
-		{ label: 'films', heading: 'Appears in' }
-	]
 };
 
 export default class CategoryLinks extends Component {
@@ -29,10 +17,7 @@ export default class CategoryLinks extends Component {
 			loaded: false,
 			empty: false,
 			films: [],
-			location: [],
 			people: [],
-			species: [],
-			vechiles: []
 		};
 
 		this.displayLinks = this.displayLinks.bind(this);

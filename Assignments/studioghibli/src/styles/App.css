@@ -1,37 +1,61 @@
 .category-list > div {
-	margin-bottom: 1em;
-	background-color: cornflowerblue;
+  margin-bottom: 1em;
+  background-color: cornflowerblue;
 }
-html{
-	display: flex;
-	justify-content: center;
-	background-color: cornflowerblue
+html {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
 }
 label {
-	margin: 0;
-	font-weight: bold;
-	display: inline;
-	background-color: cornflowerblue;
+  margin: 0;
+  font-weight: bold;
+  display: inline;
 }
-.links{
-	display: flex;
-	justify-content: center;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav .nav-item .active {
-	display: flex;
-	align-items: center;
-	color: black;
-	background-color: cornflowerblue;
+.nav .nav-item .active .nav-link {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: cornflowerblue;
 }
-#title{
-	background-color: cornflowerblue;
-	display: flex;
-	align-items: center;
-	color: red;
-	font-size: 40px
+#title {
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 40px;
 }
-.subs{
-	float: bottom;
-	display: flex;
-	justify-content: center;
+.subs {
+  float: bottom;
+  display: flex;
+  justify-content: center;
+}
+.cont {
+  background-color: cornflowerblue;
+}
+.container {
+  background-color: cornflowerblue;
+}
+body {
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+img {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.App {
+  display: flex;
+  align-items: center;
+}
+#rf {
+  display: flex;
+  align-items: center;
 }

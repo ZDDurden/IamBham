@@ -10,14 +10,6 @@ const displayFields = {
 			{ name: 'rt_score', label: 'Rotten Tomatoes Score' }
 		]
 	},
-	locations: {
-		text: [
-			{ name: 'climate' },
-			{ name: 'terrain' },
-			{ name: 'surface_water', label: 'Surface Water' }
-		],
-		links: ['residents', 'films']
-	},
 	people: {
 		text: [
 			{ name: 'gender' },
@@ -27,20 +19,6 @@ const displayFields = {
 		],
 		links: ['film', 'species']
 	},
-	species: {
-		text: [
-			{ name: 'eye_colors', label: 'Eye Colors' },
-			{ name: 'hair_colors', label: 'Hair Colors' }
-		],
-		links: ['people', 'films']
-	},
-	vehicles: {
-		text: [
-			{ name: 'description', hideLabel: true },
-			{ name: 'vehicle_class', label: 'Vehicle Class' },
-			{ name: 'length' }
-		]
-	}
 };
 
 export default class CategoryText extends Component {

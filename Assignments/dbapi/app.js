@@ -15,13 +15,13 @@ app.get('/', function (req, res) {
     return res.send({ error: true, message: 'hello' })
 });
 // connection configurations
-app.use(function(req, res, next)
-var dbConn = mysql.createConnection({
+
+const dbConn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'IAmBh@m2019',
     database: 'chirpr'
-}));
+});
   
 // connect to database
 dbConn.connect(); 

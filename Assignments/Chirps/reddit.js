@@ -20,7 +20,7 @@ async function rdt() {
 
         redditArr.push({ title, author, url }),
           fs.writeFile(
-            "./popular-articles.json",
+            "../popular-articles.json",
             JSON.stringify(redditArr),
             err => {
               if (err) {

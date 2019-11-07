@@ -19,7 +19,7 @@ async function rdt() {
         let url = stuff.data.url;
 
         redditArr.push({ title, author, url }),
-          fs.writeFile(
+          fs.appendFileSync(
             "../popular-articles.json",
             JSON.stringify(redditArr),
             err => {

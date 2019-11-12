@@ -6,7 +6,7 @@ if (fs.existsSync("chirps.json")) {
 }
 
 let getChirps = () => {
-  return Object.assign({}, chirps); 
+  return Object.assign({}, chirps);
 };
 
 let getChirp = id => {

@@ -1,10 +1,14 @@
+#bdy {
+  background-color: lightslategray;
+}
 .chirp-container {
   display: inline;
+  background-color: lightslategray;
 }
 
 .chirp,
 button {
-  background-color: #55cbe9;
+  background-color: lightgreen;
   color: #ffffff;
   font-size: 20px;
   border-radius: 4px;
@@ -17,7 +21,7 @@ button {
 button:hover {
   background-color: #ffffff;
   color: black;
-  border: 2px solid #55cbe9;
+  border: 2px solid lightgoldenrodyellow;
 }
 
 .chirp {
@@ -36,4 +40,9 @@ button:hover {
 
 #edit-chirp {
   padding: 10px;
+}
+
+#submit {
+  background-color: lightgreen;
+  color: #ffffff;
 }

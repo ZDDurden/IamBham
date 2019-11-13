@@ -1,0 +1,11 @@
+/Users/student/Desktop/Zach/helloc/bin/Debug/netcoreapp2.1/helloc.deps.json
+/Users/student/Desktop/Zach/helloc/bin/Debug/netcoreapp2.1/helloc.runtimeconfig.json
+/Users/student/Desktop/Zach/helloc/bin/Debug/netcoreapp2.1/helloc.runtimeconfig.dev.json
+/Users/student/Desktop/Zach/helloc/bin/Debug/netcoreapp2.1/helloc.dll
+/Users/student/Desktop/Zach/helloc/bin/Debug/netcoreapp2.1/helloc.pdb
+/Users/student/Desktop/Zach/helloc/obj/Debug/netcoreapp2.1/helloc.csprojAssemblyReference.cache
+/Users/student/Desktop/Zach/helloc/obj/Debug/netcoreapp2.1/helloc.csproj.CoreCompileInputs.cache
+/Users/student/Desktop/Zach/helloc/obj/Debug/netcoreapp2.1/helloc.AssemblyInfoInputs.cache
+/Users/student/Desktop/Zach/helloc/obj/Debug/netcoreapp2.1/helloc.AssemblyInfo.cs
+/Users/student/Desktop/Zach/helloc/obj/Debug/netcoreapp2.1/helloc.dll
+/Users/student/Desktop/Zach/helloc/obj/Debug/netcoreapp2.1/helloc.pdb

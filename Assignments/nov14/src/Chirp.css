@@ -1,0 +1,48 @@
+#bdy {
+  background-color: lightslategray;
+}
+.chirp-container {
+  display: inline;
+  background-color: lightslategray;
+}
+
+.chirp,
+button {
+  background-color: lightgreen;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid lightgoldenrodyellow;
+}
+
+.chirp {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+#deleter {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#edit-chirp {
+  padding: 10px;
+}
+
+#submit {
+  background-color: lightgreen;
+  color: #ffffff;
+}

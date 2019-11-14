@@ -1,0 +1,11 @@
+/Users/student/Desktop/Zach/cproj/bin/Debug/netcoreapp2.1/cproj.deps.json
+/Users/student/Desktop/Zach/cproj/bin/Debug/netcoreapp2.1/cproj.runtimeconfig.json
+/Users/student/Desktop/Zach/cproj/bin/Debug/netcoreapp2.1/cproj.runtimeconfig.dev.json
+/Users/student/Desktop/Zach/cproj/bin/Debug/netcoreapp2.1/cproj.dll
+/Users/student/Desktop/Zach/cproj/bin/Debug/netcoreapp2.1/cproj.pdb
+/Users/student/Desktop/Zach/cproj/obj/Debug/netcoreapp2.1/cproj.csprojAssemblyReference.cache
+/Users/student/Desktop/Zach/cproj/obj/Debug/netcoreapp2.1/cproj.csproj.CoreCompileInputs.cache
+/Users/student/Desktop/Zach/cproj/obj/Debug/netcoreapp2.1/cproj.AssemblyInfoInputs.cache
+/Users/student/Desktop/Zach/cproj/obj/Debug/netcoreapp2.1/cproj.AssemblyInfo.cs
+/Users/student/Desktop/Zach/cproj/obj/Debug/netcoreapp2.1/cproj.dll
+/Users/student/Desktop/Zach/cproj/obj/Debug/netcoreapp2.1/cproj.pdb

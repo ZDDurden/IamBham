@@ -9,4 +9,4 @@ app.use(express.json());
 
 app.use("/api", apiRouter);
 
-app.listen(3000);
+app.listen(5000);

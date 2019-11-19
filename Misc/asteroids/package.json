@@ -1,5 +1,5 @@
 {
-  "name": "vuefirst",
+  "name": "asteroids",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,13 @@
   },
   "dependencies": {
     "@vue/cli": "^4.0.5",
-    "core-js": "^3.3.2",
+    "axios": "^0.18.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-plugin-eslint": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -42,6 +39,7 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "not ie <= 8"
   ]
 }

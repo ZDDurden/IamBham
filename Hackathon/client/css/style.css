@@ -4,18 +4,24 @@
 /* Importing layouts */
 @import url("layouts/dashboard.css");
 
+html {
+  background-color: #56baed;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   font-weight: 300;
+  background-color: #56baed;
 }
 p {
   font-weight: lighter;
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
@@ -29,6 +35,9 @@ h2 {
 h3 {
   font-size: 23px;
 }
+h4 {
+  font-size: 20px;
+}
 
 .navbar-minimal {
   height: 70px;
@@ -41,4 +50,32 @@ h3 {
 .navbar-minimal img {
   width: 50px;
   height: 50px;
+}
+
+table {
+  border-spacing: 0.5rem;
+}
+
+td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+table th {
+  font-size: 15px;
+  /* text-decoration-line: underline; */
+}
+
+table td {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  font-weight: 400 lighter;
+  text-align: left;
+  /* padding: 8px 8px; */
+}
+
+td:last-child {
+  margin-bottom: 15px;
 }

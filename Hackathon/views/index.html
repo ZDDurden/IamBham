@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Student Page</title>
-    <link rel="stylesheet" type="text/css" href="../client/css/style.css" />
+    <link rel="stylesheet" href="./client/css/style.css" />
   </head>
 
   <body>
     <div class="navbar-minimal">
-      <img src="../client/css/images/logo_small.png" />
+      <img src="./client/css/images/logo_small.png" />
     </div>
 
     <div class="container">
@@ -18,55 +32,204 @@
         <div class="dashboard-card main">
           <div class="dashboard-card-content">
             <img
-              src="../client/css/images/profile.jpg"
+              src="./client/css/images/profile.jpg"
               alt=""
               width="150"
               class="img-circle"
             />
             <h2>Ryan Propst</h2>
             <p>Coding Bootcamp</p>
-            <a href="/" class="btn btn-primary btn-lg">Profile</a>
-          </div>
-        </div>
-        <div class="dashboard-card stat">
-          <div class="dashboard-card-content">
-            <h3>Employed</h3>
-            <p>COMPANY: Sigao</p>
-            <p>Title: Consultant/Developer</p>
-            <p>Salary: xx,xxx</p>
-          </div>
-        </div>
-        <div class="dashboard-card stat">
-          <div class="dashboard-card-content">
-            <h3>Interviews</h3>
-            <p>Sigao</p>
-            <p>Progressive</p>
-            <p>Shipt</p>
-            <p>Daxko</p>
-            <p>BCBS</p>
-          </div>
-        </div>
-        <div class="dashboard-card stat">
-          <div class="dashboard-card-content">
-            <h3>??</h3>
-            <p>
-              does this need to be here or should we remove this card and
-              stretch the card prior to add, interview contact point etc.?
-            </p>
+            <a href="/" class="btn btn-primary btn-lg profile">Profile</a>
           </div>
         </div>
         <div class="dashboard-card description">
           <div class="dashboard-card-content">
             <h3>Applying</h3>
-            <p class="text-justify">
-              <p>Sigao</p>
-              <p>Protective</p>
-              <p>BCBS</p>
-              <p>FIS Global</p>
-            </p>
+            <table>
+              <tr>
+                <th>Company</th>
+                <th>Job Title</th>
+                <th>Date Applied</th>
+                <th>Job Source</th>
+                <th>Job Type</th>
+              </tr>
+              <tr>
+                <td>Sigao Studios</td>
+                <td>Consultant/Dev</td>
+                <td>15 Oct 2019</td>
+                <td>Round Robin</td>
+                <td>Apprenticeship</td>
+              </tr>
+              <tr>
+                <td>Lady GaGa R-Us</td>
+                <td>Little Monster</td>
+                <td>20 Nov 2019</td>
+                <td>Recruiter</td>
+                <td>Contract</td>
+              </tr>
+              <tr>
+                <td>Protective Life</td>
+                <td>Tech Talent Associate</td>
+                <td>18 Oct 2019</td>
+                <td>Website</td>
+                <td>Full-Time</td>
+              </tr>
+            </table>
+
+            <a href="#" class="btn btn-primary btn-lg btn-other btn-apply"
+              >Add Application</a
+            >
           </div>
         </div>
+        <div class="dashboard-card stat">
+          <div class="dashboard-card-content">
+            <h3>Interviews</h3>
+            <table>
+              <tr>
+                <th>Company</th>
+                <th>Job Title</th>
+                <th>Date Interviewed</th>
+                <!-- <th>Placement Agency</th> -->
+              </tr>
+              <tr>
+                <td>Sigao Studios</td>
+                <td>Consultant/Dev</td>
+                <td>12 Nov 2019</td>
+                <!-- <td>No</td> -->
+              </tr>
+              <tr>
+                <td>Progressive</td>
+                <td>Tech Talent Associate</td>
+                <td>21 Nov 2019</td>
+                <!-- <td></td> -->
+              </tr>
+              <tr>
+                <td>Shipt</td>
+                <td>QA Analyst</td>
+                <td>12 Nov 2019</td>
+                <!-- <td>No</td> -->
+              </tr>
+              <tr>
+                <td>Daxko</td>
+                <td>Jr Wed Dev</td>
+                <td>18 Nov 2019</td>
+                <!-- <td>No</td> -->
+              </tr>
+              <!-- <tr>
+                <td>BCBS</td>
+                <td>Mausoleum Manager</td>
+                <td>21 Nov 2019</td>
+                 <td>No</td> -->
+              </tr>
+            </table>
+
+            <!-- <a href="#" class="btn btn-primary btn-lg">Add Interviews</a> -->
+            <!-- Button trigger modal -->
+             <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="myModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                     Interview
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      Company:<br>
+                      <input type="text" name="company"><br>
+                      Job Title:<br>
+                      <input type="text" name="job title"><br>
+                      Date:<br>
+                      <input type="text" name="date"><br>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+          </div>
+
+
+        </div>
+
+        <div class="dashboard-card stat">
+          <div class="dashboard-card-content">
+            <h3>Employed</h3>
+            <table>
+              <tr>
+                <th>Company:</th>
+                <td>Sigao Studios</td>
+              </tr>
+              <tr>
+                <th>Title:</th>
+                <td>Consultant/Developer</td>
+              </tr>
+              <tr>
+                <th>Wage:</th>
+                <td>xx,xxx</td>
+              </tr>
+              <tr>
+                <th>Start Date:</th>
+                <td>6 Jan 2020</td>
+              </tr>
+              <tr>
+                <th>IB Partner:</th>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>Supervisor:</th>
+                <td>Someone really Smart</td>
+              </tr>
+            </table>
+
+            <a href="#" class="btn btn-primary btn-lg">Add Employment</a>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
+    <script>
+      // /$('#myModal').modal('toggle')
+    </script>
   </body>
 </html>
